@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.salesagents.GUI.MainController" style="-fx-background-color: #f0f0f0;">
+    <VBox fx:id="mainVBox" spacing="10.0" alignment="CENTER" prefWidth="900.0" prefHeight="200.0" style="-fx-alignment: CENTER;">
+        <Region VBox.vgrow="ALWAYS"/>
+        <Label fx:id="helloLabel" text="" style="-fx-text-fill: #1976D2; -fx-font-size: 24; -fx-font-weight: bold;"/>
+        <HBox spacing="5.0" alignment="CENTER">
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Delete Account" onAction="#handleDeleteAccount" style="-fx-background-color: #4CAF50; -fx-text-fill: #ffffff; -fx-font-weight: bold;" prefWidth="200"/>
+            <Button text="Update Account" onAction="#handleUpdateAccount" style="-fx-background-color: #4285F4; -fx-text-fill: #ffffff; -fx-font-weight: bold;" prefWidth="200"/>
+            <Button text="See all agents" onAction="#handleSeeAgents" style="-fx-background-color: #4CAF50; -fx-text-fill: #ffffff; -fx-font-weight: bold;" prefWidth="200"/>
+            <Button text="Show Product List" onAction="#handleShowProductList" style="-fx-background-color: #4285F4; -fx-text-fill: #ffffff; -fx-font-weight: bold;" prefWidth="200"/>
+            <Button text="Logout" onAction="#handleLogout" style="-fx-background-color: #4285F4; -fx-text-fill: #ffffff; -fx-font-weight: bold;" prefWidth="200"/>
+            <Region HBox.hgrow="ALWAYS"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

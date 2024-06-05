@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #f0f0f0; -fx-padding: 20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salesagents.GUI.LoginController">
+    <VBox alignment="CENTER" prefHeight="300.0" prefWidth="340.0" spacing="10.0" style="-fx-padding: 0 50 0 50;">
+        <Label style="-fx-font-weight: bold;" text="Username:" />
+        <TextField fx:id="usernameField" promptText="Enter your username" />
+        <Label style="-fx-font-weight: bold;" text="Password:" />
+        <PasswordField fx:id="passwordField" promptText="Enter your password" />
+        <Button onAction="#handleLogin" style="-fx-background-color: #4CAF50; -fx-text-fill: #ffffff; -fx-font-weight: bold;" text="Log In" />
+        <HBox alignment="CENTER" prefHeight="26.0" prefWidth="236.0">
+            <Label  style="-fx-font-weight: bold;" text="You don't have an account? " />
+            <Button onAction="#handleSignUp" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #3498db; -fx-text-fill: #ffffff; -fx-font-weight: bold;" text="Sign Up" />
+        </HBox>
+        <Label fx:id="statusLabel" style="-fx-text-fill: #d32f2f;" text="" />
+    </VBox>
+</AnchorPane>
